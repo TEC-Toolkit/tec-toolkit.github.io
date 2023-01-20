@@ -8,15 +8,12 @@ With the Net Zero agenda gaining significant traction across the world, organisa
 
 * The Emission Conversion Factor Ontology (ECFO) - [https://w3id.org/ecfo ](https://w3id.org/ecfo)
 
-TBA
-
 ## Knowledge Graphs 
 
-* Emission Conversion Factors described using ECFO and published by BEIS (UK)
+* Emission Conversion Factors described using ECFO 
  
- | Year        | Description      | Link |
-|:-------------|:------------------| : ---- |
-| 2021      | tba |  [Link] (https://github.com/EATS-UoA/ECFO-Conversion-Factors-BEIS-UK/tree/main/2021) |
+ | Year        | Publisher | Country  | Description      | Number of Conversion Factors |Link |
+|:-------------|:------- |:-------|  :------------------| :-------|: ---- |
+| 2021      | BEIS | UK | These emission conversion factors are for use by UK and international organisations to report on greenhouse gas emissions. | 7605 |  https://github.com/EATS-UoA/ECFO-Conversion-Factors-BEIS-UK/tree/main/2021 |
 
-
-TBA
+## Software
