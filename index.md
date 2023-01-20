@@ -6,7 +6,7 @@ With the Net Zero agenda gaining significant traction across the world, organisa
 
 ## Ontologies 
 
-1. The Emission Conversion Factor Ontology (ECFO) 
+1. The Emission Conversion Factor Ontology (ECFO) [https://w3id.org/ecfo ](https://w3id.org/ecfo)
 
 TBA
 
@@ -14,9 +14,9 @@ TBA
 
 1. Emission Conversion Factors described using ECFO and published by BEIS (UK)
  
- | Year        | Where to find       |
-|:-------------|:------------------|
-| 2021      | link | 
+ | Year        | Description      | Link |
+|:-------------|:------------------| : ---- |
+| 2021      | tba |  [Link] (https://github.com/EATS-UoA/ECFO-Conversion-Factors-BEIS-UK/tree/main/2021) |
 
 
 TBA
