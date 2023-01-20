@@ -6,7 +6,7 @@ With the Net Zero agenda gaining significant traction across the world, organisa
 
 ## Ontologies 
 
-* The Emission Conversion Factor Ontology (ECFO) [https://w3id.org/ecfo ](https://w3id.org/ecfo)
+* The Emission Conversion Factor Ontology (ECFO) - [https://w3id.org/ecfo ](https://w3id.org/ecfo)
 
 TBA
 
