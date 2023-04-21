@@ -11,7 +11,7 @@ With the Net Zero agenda gaining significant traction across the world, organisa
 
 ## Knowledge Graphs 
 
-* [SPARQL endpoint:](https://cf.linkeddata.es/sparql)
+* [SPARQL endpoint](https://cf.linkeddata.es/sparql)
 
 * Emission Conversion Factors described using ECFO [GITHUB repo] (https://github.com/TEC-Toolkit/cfkg)
  
