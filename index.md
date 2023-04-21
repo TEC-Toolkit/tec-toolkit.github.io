@@ -21,4 +21,4 @@ With the Net Zero agenda gaining significant traction across the world, organisa
 
 ## Software
 
-[Semantic Machine Lerning Impact Calculator] (https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator)
+* [Semantic Machine Lerning Impact Calculator] (https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator)
