@@ -7,8 +7,11 @@ With the Net Zero agenda gaining significant traction across the world, organisa
 ## Ontologies 
 
 * The Emission Conversion Factor Ontology (ECFO) - [https://w3id.org/ecfo ](https://w3id.org/ecfo)
+* The Provenance of Emission Calculations Ontoltogy (PECO) - [https://w3id.org/ecfo ](https://w3id.org/peco)
 
 ## Knowledge Graphs 
+
+* SPARQL endpoint: [https://cf.linkeddata.es/sparql] (https://cf.linkeddata.es/sparql)
 
 * Emission Conversion Factors described using ECFO 
  
@@ -17,3 +20,5 @@ With the Net Zero agenda gaining significant traction across the world, organisa
 | 2021      | BEIS | UK | These emission conversion factors are for use by UK and international organisations to report on greenhouse gas emissions. | 7605 |  https://github.com/EATS-UoA/ECFO-Conversion-Factors-BEIS-UK/tree/main/2021 |
 
 ## Software
+
+[Semantic Machine Lerning Impact Calculator] (https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator)
