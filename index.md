@@ -13,11 +13,11 @@ With the Net Zero agenda gaining significant traction across the world, organisa
 
 * SPARQL endpoint: [https://cf.linkeddata.es/sparql] (https://cf.linkeddata.es/sparql)
 
-* Emission Conversion Factors described using ECFO 
+* Emission Conversion Factors described using ECFO [GITHUB repo] (https://github.com/TEC-Toolkit/cfkg)
  
- | Year        | Publisher | Country  | Description      | Number of Conversion Factors |Link |
-|:-------------|:------- |:-------|  :------------------| :-------|: ---- |
-| 2021      | BEIS | UK | These emission conversion factors are for use by UK and international organisations to report on greenhouse gas emissions. | 7605 |  https://github.com/EATS-UoA/ECFO-Conversion-Factors-BEIS-UK/tree/main/2021 |
+ | Year        | Publisher | Country  | Description      | Number of Conversion Factors |
+|:-------------|:------- |:-------|  :------------------| :-------|
+| 2016 -2022     | BEIS | UK | These emission conversion factors are for use by UK and international organisations to report on greenhouse gas emissions. | tba | 
 
 ## Software
 
