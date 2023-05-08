@@ -21,6 +21,8 @@ The license for the TEC toolkit is [CC-BY 4.0][http://creativecommons.org/licens
 
 The TEC toolkit consists ontologies for modelling ECFs in KGs and describing provenance traces of emissions calculations, public Knowledge Graphs built from open data with over 42400 ECFs, and the Semantic Machine Lerning Impact Calculator.
 
+**Demo**: https://calculator.linkeddata.es/
+
 ## Ontologies 
 
 * The Emission Conversion Factor Ontology (ECFO) - [https://w3id.org/ecfo](https://w3id.org/ecfo)- aims to provide a generic model for describing the values of Emission Converstion Factors and their associated metedata.
