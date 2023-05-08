@@ -15,7 +15,7 @@ The aim of this project and this open source initiative is to provide ontology m
 Milan Markovic, Daniel Garijo, Stefano Germano and Iman Naja. Transparent Emission Calculations (TEC) Toolkit. 2023. URL: https://tec-toolkit.github.io/ 
 
 ## License
-The license for the TEC toolkit is [CC-BY 4.0]{http://creativecommons.org/licenses/by/4.0}. All its components are under the same license except for the Semantic Machine Lerning Impact Calculator which is under the MIT License (MIT). 
+The license for the TEC toolkit is [CC-BY 4.0][http://creativecommons.org/licenses/by/4.0]. All its components are under the same license except for the Semantic Machine Lerning Impact Calculator which is under the MIT License (MIT). 
 
 # Resources
 
