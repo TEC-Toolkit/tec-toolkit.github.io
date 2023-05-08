@@ -20,13 +20,9 @@ Note that all the TEC toolkits components are under the same license except for 
 
 # Resources
 
-* [Emission Conversion Factors Ontology](https://github.com/EATS-UoA/ECFO)
-  Repository of an ontology that formalises emission conversion factors.
-* [Provenance of Emission Calculation Ontology](https://github.com/EATS-UoA/peco)  
-  Repository of an ontology extending the PROV standard with the traces of emission calculations.
-* [Conversion Factors Knowledge Graph](https://github.com/EATS-UoA/cfkg)  
-  Repository with the mappings, cleaning steps and sources used to generate a knowledge graph of conversion factors.
-* [Conversion factor SPARQL endpoint](https://sparql.cf.linkeddata.es/)  
-  SPARQL endpoint with the current conversion factors loaded.
-* [Data validation module](https://github.com/TEC-Toolkit/Data-Validation)
-  Repository for the module that performs data validation using Datalog.
+* [Emission Conversion Factors Ontology](https://github.com/EATS-UoA/ECFO): Repository of an ontology that formalises emission conversion factors.
+* [Provenance of Emission Calculation Ontology](https://github.com/EATS-UoA/peco): Repository of an ontology extending the PROV standard with the traces of emission calculations.
+* [Conversion Factors Knowledge Graph](https://github.com/EATS-UoA/cfkg): Repository with the mappings, cleaning steps and sources used to generate a knowledge graph of conversion factors.
+* [Conversion factor SPARQL endpoint](https://sparql.cf.linkeddata.es/): SPARQL endpoint with the current conversion factors loaded.
+* [Data validation module](https://github.com/TEC-Toolkit/Data-Validation): Repository for the module that performs data validation using Datalog.
+* [Semantic Machine Learning Impact Calculator (SMLIC)](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator): Repository for the code and queries used to create a transparent emission calculator, together with a fully transparent emission report. This repo also links to the [Demo](https://calculator.linkeddata.es/).
