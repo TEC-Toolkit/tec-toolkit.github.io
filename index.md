@@ -26,11 +26,11 @@ The TEC toolkit consists ontologies for modelling ECFs in KGs and describing pro
 
 * [SPARQL endpoint](https://cf.linkeddata.es/sparql)
 
-* Emission Conversion Factors described using ECFO [GITHUB repo] (https://github.com/TEC-Toolkit/cfkg)
+* Emission Conversion Factors described using ECFO [GITHUB repo](https://github.com/TEC-Toolkit/cfkg)
  
  | Year        | Publisher | Country  | Description      | Number of Conversion Factors |
 |:-------------|:------- |:-------|  :------------------| :-------|
-| 2016 -2022     | BEIS | UK | These emission conversion factors are for use by UK and international organisations to report on greenhouse gas emissions. | tba | 
+| 2016 -2022     | BEIS | UK | These emission conversion factors are for use by UK and international organisations to report on greenhouse gas emissions. | 42400 | 
 
 ## Software
 
