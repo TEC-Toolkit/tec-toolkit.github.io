@@ -21,7 +21,7 @@ The license for the TEC toolkit ontologies is [CC-BY 4.0](http://creativecommons
 
 The TEC toolkit consists ontologies for modelling ECFs in KGs and describing provenance traces of emissions calculations, public Knowledge Graphs built from open data with over 42400 ECFs, and the Semantic Machine Lerning Impact Calculator.
 
-**Demo**: https://calculator.linkeddata.es/
+**Demo (currently only Chrome is supported)**: https://calculator.linkeddata.es/
 
 ## Ontologies 
 
@@ -31,7 +31,7 @@ The TEC toolkit consists ontologies for modelling ECFs in KGs and describing pro
 ## Knowledge Graphs 
 
 * [SPARQL endpoint](https://sparql.cf.linkeddata.es/cf/). See [https://github.com/TEC-Toolkit/cfkg#sparql-endpoint](https://github.com/TEC-Toolkit/cfkg#sparql-endpoint) to learn more on doing queries.
-* [Knowledgre Graph (ttl, nt)] (https://zenodo.org/record/7916096#.ZFugTo1BxEY)
+* [Knowledgre Graph in Turtle](https://zenodo.org/record/7916096#.ZFugTo1BxEY)
 
 * Emission Conversion Factors described using ECFO [GITHUB repo](https://github.com/TEC-Toolkit/cfkg)
  
