@@ -30,16 +30,24 @@ The TEC toolkit consists ontologies for modelling ECFs in KGs and describing pro
 
 ## Knowledge Graphs 
 
-* [SPARQL endpoint](https://cf.linkeddata.es/sparql)
+* [SPARQL endpoint](https://sparql.cf.linkeddata.es/cf/query)
+* [Knowledgre Graph (ttl)] (https://sparql.cf.linkeddata.es/cf)
 
 * Emission Conversion Factors described using ECFO [GITHUB repo](https://github.com/TEC-Toolkit/cfkg)
  
 | Year        | Publisher | Country  | Description      | Number of Conversion Factors |
 |:-------------|:------- |:-------|  :------------------| :-------|
-| 2016 -2022     | BEIS | UK | These emission conversion factors are for use by UK and international organisations to report on greenhouse gas emissions. | 42400 | 
+| 2022    | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6464 | 
+| 2021     | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6284 | 
+| 2020     | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6140 | 
+| 2019    | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6163 | 
+| 2018     | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6192 | 
+| 2017     | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6178 | 
+| 2016     | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 4977 | 
+| 2002 -2019     | <a href="https://github.com/mlco2/impact">MLI</a> | Various | A collection of Scope 2 electricity emission conversion factors from a range of sources. | 81 | 
 
 ## Software
 
-The [Semantic Machine Lerning Impact Calculator](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator) is an extension of the [Machine learning Impact (MLI) calculator](https://mlco2.github.io/impact\#compute) with semantic components to perform the emission calculations.
+* The [Semantic Machine Lerning Impact Calculator](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator) is an extension of the [Machine learning Impact (MLI) calculator](https://mlco2.github.io/impact\#compute) with semantic components to perform the emission calculations.
 
-The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) which runs Datalog rules to detect violations of conditions.
+* The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) which runs Datalog rules to detect violations of conditions.
