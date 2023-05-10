@@ -12,10 +12,10 @@ The aim of this project and this open source initiative is to provide ontology m
 
 ## Cite as
 
-Milan Markovic, Daniel Garijo, Stefano Germano and Iman Naja. Transparent Emission Calculations (TEC) Toolkit. 2023. URL: https://tec-toolkit.github.io/ 
+Milan Markovic, Daniel Garijo, Stefano Germano and Iman Naja. Transparent Emission Calculations (TEC) Toolkit. 2023. URL: [https://tec-toolkit.github.io/](https://tec-toolkit.github.io/)
 
 ## License
-The license for the TEC toolkit is [CC-BY 4.0][http://creativecommons.org/licenses/by/4.0]. All its components are under the same license except for the Semantic Machine Lerning Impact Calculator which is under the MIT License (MIT). 
+The license for the TEC toolkit ontologies is [CC-BY 4.0](http://creativecommons.org/licenses/by/4.0). For the software components, the [Semantic Machine Lerning Impact Calculator](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator) and the [data validation module](https://github.com/TEC-Toolkit/Data-Validation) are under the MIT License (MIT). The [mappings and KG](https://github.com/EATS-UoA/cfkg) are under an Apache 2.0 license.
 
 # Resources
 
@@ -30,8 +30,8 @@ The TEC toolkit consists ontologies for modelling ECFs in KGs and describing pro
 
 ## Knowledge Graphs 
 
-* [SPARQL endpoint](https://sparql.cf.linkeddata.es/cf/query)
-* [Knowledgre Graph (ttl)] (https://sparql.cf.linkeddata.es/cf)
+* [SPARQL endpoint](https://sparql.cf.linkeddata.es/cf/). See [https://github.com/TEC-Toolkit/cfkg#sparql-endpoint](https://github.com/TEC-Toolkit/cfkg#sparql-endpoint) to learn more on doing queries.
+* [Knowledgre Graph (ttl, nt)] (https://zenodo.org/record/7916096#.ZFugTo1BxEY)
 
 * Emission Conversion Factors described using ECFO [GITHUB repo](https://github.com/TEC-Toolkit/cfkg)
  
@@ -50,4 +50,4 @@ The TEC toolkit consists ontologies for modelling ECFs in KGs and describing pro
 
 * The [Semantic Machine Lerning Impact Calculator](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator) is an extension of the [Machine learning Impact (MLI) calculator](https://mlco2.github.io/impact\#compute) with semantic components to perform the emission calculations.
 
-* The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) which runs Datalog rules to detect violations of conditions.
+* The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) runs Datalog rules to detect violations of conditions according to ECFO.
