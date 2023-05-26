@@ -1,5 +1,7 @@
-<div>
-<img src="assets/Logo%20TEC.svg" alt="TEC-Toolkit Logo" width=30% />
+<div style="width:30%">
+
+![TEC-Toolkit Logo](assets/Logo%20TEC.svg)
+
 </div>
 
 # About
