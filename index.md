@@ -1,4 +1,6 @@
+<div>
 <img src="assets/Logo%20TEC.svg" alt="TEC-Toolkit Logo" width=30% />
+</div>
 
 # About
 
