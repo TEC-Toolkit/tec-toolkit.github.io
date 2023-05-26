@@ -1,8 +1,8 @@
-<div style="width:30%">
+<!-- <div style="width:30%">
 
 ![TEC-Toolkit Logo](assets/Logo%20TEC.svg)
 
-</div>
+</div> -->
 
 # About
 
@@ -37,7 +37,7 @@ The TEC toolkit consists ontologies for modelling ECFs in KGs and describing pro
 
 ### The Emission Conversion Factor Ontology (ECFO)
 
-<img src="assets/Logo%20ECFO.svg" alt="ECFO Logo" width=20% />
+<!-- <img src="assets/Logo%20ECFO.svg" alt="ECFO Logo" width=20% /> -->
 
 Available at: [https://w3id.org/ecfo](https://w3id.org/ecfo)
 
@@ -45,7 +45,7 @@ Aims to provide a generic model for describing the values of Emission Conversion
 
 ### The Provenance of Emission Calculations Ontoltogy (PECO)
 
-<img src="assets/Logo%20PECO.svg" alt="PECO Logo" width=20% />
+<!-- <img src="assets/Logo%20PECO.svg" alt="PECO Logo" width=20% /> -->
 
 Available at: [https://w3id.org/peco](https://w3id.org/peco)
 
