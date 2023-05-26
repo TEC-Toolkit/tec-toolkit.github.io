@@ -1,6 +1,12 @@
+<div style="text-align: center">
+
+<img src="assets/Logo%20TEC.svg" alt="TEC-Toolkit Logo" width=20% />
+
 # TEC-Toolkit
 
-With the Net Zero agenda gaining significant traction across the world, organisations are often required to report carbon emissions associated with their operation. However, calculating emissions is not a trivial task and reported scores can differ depending on the choices made by those performing the calculations or the software used to assist with this task. This might include the methodology and conversion factors used to calculate the scores as well as the origin and accuracy of the input data (e.g., energy usage). 
+</div>
+
+With the Net Zero agenda gaining significant traction across the world, organisations are often required to report carbon emissions associated with their operation. However, calculating emissions is not a trivial task and reported scores can differ depending on the choices made by those performing the calculations or the software used to assist with this task. This might include the methodology and conversion factors used to calculate the scores as well as the origin and accuracy of the input data (e.g., energy usage).
 The aim of this project and this open source initiative is to provide ontology models and software tools to formalise provenance of carbon footprint calculations in a machine-understandable knowledge graphs to enhance the transparency of such process. We argue that such provenance metadata is crucial in supporting assessments of emission scores' veracity and trustworthiness, as well as improving the understandability of the calculated scores so they can be meaningfully integrated with other results across the supply chains.
 
 # Team
@@ -12,11 +18,15 @@ The aim of this project and this open source initiative is to provide ontology m
 
 # Cite as
 
-Milan Markovic, Daniel Garijo, Stefano Germano and Iman Naja. Transparent Emission Calculations (TEC) Toolkit. 2023. URL: https://tec-toolkit.github.io/ 
+> Milan Markovic, Daniel Garijo, Stefano Germano and Iman Naja. Transparent Emission Calculations (TEC) Toolkit. 2023. URL: https://tec-toolkit.github.io
 
 # License
-The license for the TEC toolkit is [CC-BY 4.0][http://creativecommons.org/licenses/by/4.0] - - see the [LICENSE](LICENSE) file for details.
-Note that all the TEC toolkits components are under the same license except for the Semantic Machine Lerning Impact Calculator which is under the MIT License (MIT). 
+
+The license for the TEC toolkit is [CC-BY 4.0](http://creativecommons.org/licenses/by/4.0).
+See the [LICENSE](LICENSE) file for details.
+
+Note that the TEC toolkits components have different licenses.
+Please refer to the LICENSE files in the specific components to know more about them.
 
 # Resources
 
