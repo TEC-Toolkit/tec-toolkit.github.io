@@ -20,19 +20,21 @@ The aim of this project and this open source initiative is to provide ontology m
 
 > Milan Markovic, Daniel Garijo, Stefano Germano and Iman Naja. Transparent Emission Calculations (TEC) Toolkit. 2023. URL: https://tec-toolkit.github.io
 
+The TEC toolkit is composed of different resources (KGs, tools, data). If you use a particular one, please cite it appropriately with its corresponding DOI
+
 # License
 
 The license for the TEC toolkit is [CC-BY 4.0](http://creativecommons.org/licenses/by/4.0).
 See the [LICENSE](LICENSE) file for details.
 
 Note that the TEC toolkits components have different licenses.
-Please refer to the LICENSE files in the specific components to know more about them.
+Please refer to the LICENSE files in the specific components to know more about them (e.g., datasets).
 
 # Resources
 
-* [Emission Conversion Factors Ontology](https://github.com/EATS-UoA/ECFO): Repository of an ontology that formalises emission conversion factors.
-* [Provenance of Emission Calculation Ontology](https://github.com/EATS-UoA/peco): Repository of an ontology extending the PROV standard with the traces of emission calculations.
-* [Conversion Factors Knowledge Graph](https://github.com/EATS-UoA/cfkg): Repository with the mappings, cleaning steps and sources used to generate a knowledge graph of conversion factors.
-* [Conversion factor SPARQL endpoint](https://sparql.cf.linkeddata.es/): SPARQL endpoint with the current conversion factors loaded.
+* [Emission Conversion Factors Ontology](https://github.com/TEC-Toolkit/ECFO): Repository of an ontology that formalises emission conversion factors.
+* [Provenance of Emission Calculation Ontology](https://github.com/TEC-Toolkit/peco): Repository of an ontology extending the PROV standard with the traces of emission calculations.
+* [Conversion Factors Knowledge Graph](https://github.com/TEC-Toolkit/cfkg): Repository with the mappings, cleaning steps and sources used to generate a knowledge graph of conversion factors.
+* [Conversion factor SPARQL endpoint](https://query.cf.linkeddata.es/query): SPARQL endpoint query interface with the current conversion factors loaded. The sparql endpoint itself is available [here](https://sparql.cf.linkeddata.es/).
 * [Data validation module](https://github.com/TEC-Toolkit/Data-Validation): Repository for the module that performs data validation using Datalog.
 * [Semantic Machine Learning Impact Calculator (SMLIC)](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator): Repository for the code and queries used to create a transparent emission calculator, together with a fully transparent emission report. This repo also links to the [Demo](https://calculator.linkeddata.es/).
