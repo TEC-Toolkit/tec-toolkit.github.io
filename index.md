@@ -4,6 +4,8 @@
 
 </div> -->
 
+ ![TEC Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20TEC.svg)
+
 # About
 
 With the Net Zero agenda gaining significant traction across the world, organisations are often required to report carbon emissions associated with their operation. However, calculating emissions is not a trivial task and reported scores can differ depending on the choices made by those performing the calculations or the software used to assist with this task. This might include the methodology and conversion factors used to calculate the scores as well as the origin and accuracy of the input data (e.g., energy usage).
@@ -45,9 +47,10 @@ Please see the [SMLI Calculator](/#smli-calculator) for a link to online demo an
 
 ## The Emission Conversion Factor Ontology (ECFO)
 
- <img src="assets/Logo%20ECFO.svg" alt="ECFO Logo" width=20% /> 
+![ECFO Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20ECFO.svg)
 
 Available at: [https://w3id.org/ecfo](https://w3id.org/ecfo)
+
 Evalaution & Examples: [CQs and SPARQL queries](https://github.com/TEC-Toolkit/PECO/tree/main/cqs)
 
 Aims to provide a generic model for describing the values of Emission Conversion Factors and their associated metadata.
@@ -58,9 +61,10 @@ Aims to provide a generic model for describing the values of Emission Conversion
 
 ## The Provenance of Emission Calculations Ontology (PECO)
 
- ![PECO Logo](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/Logo%20PECO.svg)
+ ![PECO Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20PECO.svg)
 
 Available at: [https://w3id.org/peco](https://w3id.org/peco)
+
 Evalaution & Examples: [CQs and SPARQL queries](https://github.com/TEC-Toolkit/ECFO/tree/main/cqs)
 
 Defines a vocabulary for describing provenance traces of carbon emissions calculations by capturing the quantifiable measurements of energy estimates (i.e., activity data and emission conversion factors used to estimate the carbon emissions).
