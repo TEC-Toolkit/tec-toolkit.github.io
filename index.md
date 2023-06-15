@@ -9,6 +9,8 @@
 With the Net Zero agenda gaining significant traction across the world, organisations are often required to report carbon emissions associated with their operation. However, calculating emissions is not a trivial task and reported scores can differ depending on the choices made by those performing the calculations or the software used to assist with this task. This might include the methodology and conversion factors used to calculate the scores as well as the origin and accuracy of the input data (e.g., energy usage).
 The aim of this project and this open source initiative is to provide ontology models and software tools to formalise provenance of carbon footprint calculations in a machine-understandable knowledge graphs to enhance the transparency of such process. We argue that such provenance metadata is crucial in supporting assessments of emission scores' veracity and trustworthiness, as well as improving the understandability of the calculated scores so they can be meaningfully integrated with other results across the supply chains.
 
+The TEC toolkit consists ontologies for modelling ECFs in KGs and describing provenance traces of emissions calculations, public Knowledge Graphs built from open data with over 42400 ECFs, and the Semantic Machine Lerning Impact Calculator.
+
 ## Team
 
 * [Milan Markovic](https://orcid.org/0000-0002-5477-287X), Interdisciplinary Centre for Data and AI, [University of Aberdeen](https://www.abdn.ac.uk/)
@@ -31,16 +33,13 @@ The [mappings and KG](https://github.com/EATS-UoA/cfkg) are under an Apache 2.0 
 TBA
 
 
-# Resources
 
-The TEC toolkit consists ontologies for modelling ECFs in KGs and describing provenance traces of emissions calculations, public Knowledge Graphs built from open data with over 42400 ECFs, and the Semantic Machine Lerning Impact Calculator.
 
-**Demo**: https://calculator.linkeddata.es  
-(currently only Chrome is supported)
 
-## Ontologies
 
-### The Emission Conversion Factor Ontology (ECFO)
+# Ontologies
+
+## The Emission Conversion Factor Ontology (ECFO)
 
 <!-- <img src="assets/Logo%20ECFO.svg" alt="ECFO Logo" width=20% /> -->
 
@@ -48,7 +47,7 @@ Available at: [https://w3id.org/ecfo](https://w3id.org/ecfo)
 
 Aims to provide a generic model for describing the values of Emission Conversion Factors and their associated metadata.
 
-### The Provenance of Emission Calculations Ontoltogy (PECO)
+## The Provenance of Emission Calculations Ontoltogy (PECO)
 
 <!-- <img src="assets/Logo%20PECO.svg" alt="PECO Logo" width=20% /> -->
 
@@ -56,7 +55,7 @@ Available at: [https://w3id.org/peco](https://w3id.org/peco)
 
 Defines a vocabulary for describing provenance traces of carbon emissions calculations by capturing the quantifiable measurements of energy estimates (i.e., activity data and emission conversion factors used to estimate the carbon emissions).
 
-## Knowledge Graphs
+# Knowledge Graph
 
 * [SPARQL endpoint](https://sparql.cf.linkeddata.es/cf/). See [https://github.com/TEC-Toolkit/cfkg#sparql-endpoint](https://github.com/TEC-Toolkit/cfkg#sparql-endpoint) to learn more on doing queries.
 * [Knowledge Graph in Turtle](https://zenodo.org/record/7916096#.ZFugTo1BxEY)
@@ -74,8 +73,17 @@ Defines a vocabulary for describing provenance traces of carbon emissions calcul
 | 2016       | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 4977                         |
 | 2002 -2019 | <a href="https://github.com/mlco2/impact">MLI</a>                                                                | Various | A collection of Scope 2 electricity emission conversion factors from a range of sources.                                          | 81                           |
 
-## Software
+# Software
 
-* The [Semantic Machine Lerning Impact Calculator](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator) is an extension of the [Machine learning Impact (MLI) calculator](https://mlco2.github.io/impact\#compute) with semantic components to perform the emission calculations.
+## SMLI Calculator
 
-* The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) runs Datalog rules to detect violations of conditions according to ECFO.
+The [Semantic Machine Lerning Impact Calculator](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator) is an extension of the [Machine learning Impact (MLI) calculator](https://mlco2.github.io/impact\#compute) with semantic components to perform the emission calculations.
+
+### SMLI Demo 
+
+https://calculator.linkeddata.es  
+(currently only Chrome is supported)
+
+## Data Validation
+
+The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) runs Datalog rules to detect violations of conditions according to ECFO.
