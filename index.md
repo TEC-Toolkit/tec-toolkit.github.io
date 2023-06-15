@@ -30,9 +30,13 @@ The [mappings and KG](https://github.com/EATS-UoA/cfkg) are under an Apache 2.0 
 
 # How to Use this Resource
 
-TBA
+[ECFO](/#the-emission-conversion-factor-ontology-ecfo) and [PECO](/#the-provenance-of-emission-calculations-ontology-peco) ontologies may be use together or separately. For example, the [Emissions Conversion Factors KG](/#emissions-conversion-factors) uses ECFO and can be used as a look up database of conversion factors. 
 
+PECO may be used to describe the emission calculation process, which typically also involves the conversion factors and hence the combination of PECO and ECFO may be desired. Semantic Machine Learning Impact calculator is a prototype software that demonstrates how PECO and Emissions Conversion Factors KG can be embedded within a web-based application. 
 
+For further information on ECFO and PECO follow the w3id link that will let you download the ontologies and/or view the online documentation. 
+
+Please see the [SMLI Calculator](/#smli-calculator) for a link to online demo and source code to further explore how the individual components of the TEC toolkit might be integrated in a software application.
 
 
 
@@ -51,7 +55,7 @@ Aims to provide a generic model for describing the values of Emission Conversion
 
 
 
-## The Provenance of Emission Calculations Ontoltogy (PECO)
+## The Provenance of Emission Calculations Ontology (PECO)
 
 <!-- <img src="assets/Logo%20PECO.svg" alt="PECO Logo" width=20% /> -->
 
