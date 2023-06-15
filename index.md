@@ -26,6 +26,11 @@ The license for the TEC toolkit ontologies is [CC-BY 4.0](http://creativecommons
 For the software components, the [Semantic Machine Lerning Impact Calculator](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator) and the [data validation module](https://github.com/TEC-Toolkit/Data-Validation) are under the MIT License (MIT).
 The [mappings and KG](https://github.com/EATS-UoA/cfkg) are under an Apache 2.0 license.
 
+# How to Use this Resource
+
+TBA
+
+
 # Resources
 
 The TEC toolkit consists ontologies for modelling ECFs in KGs and describing provenance traces of emissions calculations, public Knowledge Graphs built from open data with over 42400 ECFs, and the Semantic Machine Lerning Impact Calculator.
