@@ -39,7 +39,7 @@ The TEC Toolkit includes the resources listed below. Every resource has its own 
 
 ## Knowledge Graph
 The Emission Conversion Factor Knowledge Graph (based on ECFO) contains over 40.000 conversion factors from two different sources over 2002-2022
-- [Knowledge Graph query interface](https://sparql.cf.linkeddata.es/cf/)
+- [Knowledge Graph query interface](https://query.cf.linkeddata.es/query)
 - [SPARQL query examples](https://github.com/TEC-Toolkit/cfkg#sparql-endpoint) to learn more on doing queries.
 
 ## Software
