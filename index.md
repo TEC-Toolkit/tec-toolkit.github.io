@@ -45,9 +45,10 @@ Please see the [SMLI Calculator](/#smli-calculator) for a link to online demo an
 
 ## The Emission Conversion Factor Ontology (ECFO)
 
-<!-- <img src="assets/Logo%20ECFO.svg" alt="ECFO Logo" width=20% /> -->
+ <img src="assets/Logo%20ECFO.svg" alt="ECFO Logo" width=20% /> 
 
 Available at: [https://w3id.org/ecfo](https://w3id.org/ecfo)
+Evalaution & Examples: [CQs and SPARQL queries](https://github.com/TEC-Toolkit/PECO/tree/main/cqs)
 
 Aims to provide a generic model for describing the values of Emission Conversion Factors and their associated metadata.
 
@@ -57,9 +58,10 @@ Aims to provide a generic model for describing the values of Emission Conversion
 
 ## The Provenance of Emission Calculations Ontology (PECO)
 
-<!-- <img src="assets/Logo%20PECO.svg" alt="PECO Logo" width=20% /> -->
+ <img src="assets/Logo%20PECO.svg" alt="PECO Logo" width=20% /> 
 
 Available at: [https://w3id.org/peco](https://w3id.org/peco)
+Evalaution & Examples: [CQs and SPARQL queries](https://github.com/TEC-Toolkit/ECFO/tree/main/cqs)
 
 Defines a vocabulary for describing provenance traces of carbon emissions calculations by capturing the quantifiable measurements of energy estimates (i.e., activity data and emission conversion factors used to estimate the carbon emissions).
 
