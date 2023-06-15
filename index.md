@@ -30,19 +30,19 @@ The license for the TEC toolkit ontologies is [CC-BY 4.0](http://creativecommons
 For the software components, the [Semantic Machine Lerning Impact Calculator](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator) and the [data validation module](https://github.com/TEC-Toolkit/Data-Validation) are under the MIT License (MIT).
 The [mappings and KG](https://github.com/EATS-UoA/cfkg) are under an Apache 2.0 license.
 
-## Resources
+# Resources
 The TEC Toolkit includes the resources listed below. Every resource has its own GitHub repository, available in the [TEC-Toolkit organization](https://github.com/TEC-Toolkit):
 
-### Ontologies
+## Ontologies
 - [ECFO](https://w3id.org/ecfo) aims to provide a generic model for describing the values of Emission Conversion Factors and their associated metadata. 
 - [PECO](https://w3id.org/peco) defines a vocabulary for describing provenance traces of carbon emissions calculations by capturing the quantifiable measurements of energy estimates (i.e., activity data and emission conversion factors used to estimate the carbon emissions).  
 
-### Knowledge Graph
+## Knowledge Graph
 The Emission Conversion Factor Knowledge Graph (based on ECFO) contains over 40.000 conversion factors from two different sources over 2002-2022
 - [Knowledge Graph query interface](https://sparql.cf.linkeddata.es/cf/)
 - [SPARQL query examples](https://github.com/TEC-Toolkit/cfkg#sparql-endpoint) to learn more on doing queries.
 
-### Software
+## Software
 - The [Semantic Machine Lerning Impact Calculator](https://calculator.linkeddata.es) is an extension of the [Machine learning Impact (MLI) calculator](https://mlco2.github.io/impact\#compute) with semantic components to perform the emission calculations.
 - The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) runs Datalog rules to detect violations of conditions according to ECFO.
 
