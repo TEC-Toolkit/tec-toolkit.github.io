@@ -95,17 +95,7 @@ https://calculator.linkeddata.es
 
 ***How it works*** 
 
-The calculator also produces JSON-LD descriptions of provenance traces documenting the individual steps of emissions calculation process. [JSON-LD context](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/tec-context.js) and set of custom [JavaScript Functions](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/tec-lib.js) are used to query ECFO KG to retrieve the information about the Emission Conversion Factors and to generate portion of the provenance trace. 
-
-An example of generating description of activity with a connected input entity in the [code that calculates the emissions](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/grayscale.js): 
-
-````
-	let wattConsumption = createCalculationEntity("Watt Consumption", state.gpus[gpu].watt, "http://www.wikidata.org/entity/Q25236", "http://www.wikidata.org/entity/Q1053879", graphLD, "")
-	
-	let electricityUseEstimate = createCalculationActivity("https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator", "Estimate Electricity Use in kW/h", graphLD)
-	
-	linkInputEntityToActivity(wattConsumption, electricityUseEstimate, graphLD)
-````
+SMLI Calculator queries the live ECFO KG to retrieve the information about the available conversion factors that match the user input. 
 
 An example call to [Java-based backend](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/java/io/github/tectoolkit/calculator/Controller.java) that queries the ECFO KG for corresponding conversion factors:
 
@@ -122,7 +112,7 @@ fetch('/cf_info_all?region=' + region)
 ````
 
 
-A SPARQL query executed to retrieve conversion factors for specific region of compute: 
+A SPARQL query executed to retrieve conversion factors for a specific region of compute: 
 ````
 PREFIX  geo:  <http://www.opengis.net/ont/geosparql#>
 PREFIX  qudt: <http://qudt.org/schema/qudt/>
@@ -174,6 +164,49 @@ WHERE
   }
 ORDER BY DESC(?applicablePeriodEnd)
 ````
+
+The calculator also produces JSON-LD descriptions of provenance traces documenting the individual steps of emissions calculation process. [JSON-LD context](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/tec-context.js) and set of custom [JavaScript Functions](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/tec-lib.js) are used to query ECFO KG to retrieve the information about the Emission Conversion Factors and to generate portion of the provenance trace. 
+
+An example of generating description of activity with a connected input entity in the [code that calculates the emissions](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/grayscale.js): 
+
+````
+	let wattConsumption = createCalculationEntity("Watt Consumption", state.gpus[gpu].watt, "http://www.wikidata.org/entity/Q25236", "http://www.wikidata.org/entity/Q1053879", graphLD, "")
+	
+	let electricityUseEstimate = createCalculationActivity("https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator", "Estimate Electricity Use in kW/h", graphLD)
+	
+	linkInputEntityToActivity(wattConsumption, electricityUseEstimate, graphLD)
+````
+
+The calculator also executes a number of validation queries, for example, to check if the latest available conversion factor is up to date: 
+
+````
+PREFIX  geo:  <http://www.opengis.net/ont/geosparql#>
+PREFIX  qudt: <http://qudt.org/schema/qudt/>
+PREFIX  peco: <https://w3id.org/peco#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  ecfo: <https://w3id.org/ecfo#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  time: <http://www.w3.org/2006/time#>
+PREFIX  prov: <http://www.w3.org/ns/prov#>
+
+SELECT DISTINCT  ?cf ?cf_value ?time
+WHERE
+  { ?entity  rdf:type  peco:EmissionScore .
+    ?entity prov:wasGeneratedBy/prov:used ?cf .
+    ?cf (ecfo:hasApplicablePeriod/time:hasEnd)/time:inXSDDate ?time .
+    ?cf  rdf:value  ?cf_value
+    FILTER ( ?time < now() )
+  }
+````
+
+The provenance trace can be also downloaded by the user. 
+
+
+For expanded example of provenance trace and sample queries please see [here](https://github.com/TEC-Toolkit/PECO/tree/main/cqs)
+
+
 ## Data Validation
 
 The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) runs Datalog rules to detect violations of conditions according to ECFO.
