@@ -204,7 +204,7 @@ WHERE
 The provenance trace can be also downloaded by the user. 
 
 
-For expanded example of provenance trace and sample queries please see [here](https://github.com/TEC-Toolkit/PECO/tree/main/cqs)
+For expanded example of provenance trace and additional queries please see [here](https://github.com/TEC-Toolkit/PECO/tree/main/cqs)
 
 
 ## Data Validation
