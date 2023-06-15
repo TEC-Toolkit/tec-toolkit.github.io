@@ -55,7 +55,9 @@ Available at: [https://w3id.org/peco](https://w3id.org/peco)
 
 Defines a vocabulary for describing provenance traces of carbon emissions calculations by capturing the quantifiable measurements of energy estimates (i.e., activity data and emission conversion factors used to estimate the carbon emissions).
 
-# Knowledge Graph
+# Knowledge Graphs
+
+## Emissions Conversion Factors
 
 * [SPARQL endpoint](https://sparql.cf.linkeddata.es/cf/). See [https://github.com/TEC-Toolkit/cfkg#sparql-endpoint](https://github.com/TEC-Toolkit/cfkg#sparql-endpoint) to learn more on doing queries.
 * [Knowledge Graph in Turtle](https://zenodo.org/record/7916096#.ZFugTo1BxEY)
@@ -79,7 +81,7 @@ Defines a vocabulary for describing provenance traces of carbon emissions calcul
 
 The [Semantic Machine Lerning Impact Calculator](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator) is an extension of the [Machine learning Impact (MLI) calculator](https://mlco2.github.io/impact\#compute) with semantic components to perform the emission calculations.
 
-### SMLI Demo 
+***SMLI Demo*** 
 
 https://calculator.linkeddata.es  
 (currently only Chrome is supported)
