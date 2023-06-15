@@ -4,7 +4,7 @@
 
 </div> -->
 
- ![TEC Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20TEC.svg)
+ ![TEC Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20TEC.svg|width=200)
 
 # About
 
@@ -47,7 +47,7 @@ Please see the [SMLI Calculator](/#smli-calculator) for a link to online demo an
 
 ## The Emission Conversion Factor Ontology (ECFO)
 
-![ECFO Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20ECFO.svg| width=200)
+![ECFO Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20ECFO.svg|width=200)
 
 Available at: [https://w3id.org/ecfo](https://w3id.org/ecfo)
 
@@ -61,7 +61,7 @@ Aims to provide a generic model for describing the values of Emission Conversion
 
 ## The Provenance of Emission Calculations Ontology (PECO)
 
- ![PECO Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20PECO.svg| width=200)
+ ![PECO Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20PECO.svg|width=200)
 
 Available at: [https://w3id.org/peco](https://w3id.org/peco)
 
