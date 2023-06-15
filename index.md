@@ -215,6 +215,6 @@ For expanded example of provenance trace and additional queries please see [here
 
 The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) runs Datalog rules to detect violations of conditions according to ECFO.
 
-## Acknowledgments 
+# Acknowledgments 
 
 This work was supported by eBay, Samsung Research UK, Siemens AG, the EPSRC projects ConCur (EP/V050869/1), UK FIRES (EP/S019111/1) and EATS (EP/V042270/1), the EU Horizon 2020 project GATEKEEPER (No 857223) and by the Comunidad de Madrid under the Multiannual Agreement with Universidad Politécnica de Madrid (UPM) in the line Support for R\&D projects for Beatriz Galindo researchers, in the context of the V PRICIT (Regional Programme of Research and Technological Innovation) and through the call Research Grants for Young Investigators from UPM.
