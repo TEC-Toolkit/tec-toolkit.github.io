@@ -58,7 +58,7 @@ Aims to provide a generic model for describing the values of Emission Conversion
 
 ## The Provenance of Emission Calculations Ontology (PECO)
 
- <img src="assets/Logo%20PECO.svg" alt="PECO Logo" width=20% /> 
+ ![PECO Logo](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/Logo%20PECO.svg)
 
 Available at: [https://w3id.org/peco](https://w3id.org/peco)
 Evalaution & Examples: [CQs and SPARQL queries](https://github.com/TEC-Toolkit/ECFO/tree/main/cqs)
