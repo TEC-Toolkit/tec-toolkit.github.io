@@ -92,6 +92,88 @@ The [Semantic Machine Lerning Impact Calculator](https://github.com/TEC-Toolkit/
 https://calculator.linkeddata.es  
 (currently only Chrome is supported)
 
+
+***How it works*** 
+
+The calculator also produces JSON-LD descriptions of provenance traces documenting the individual steps of emissions calculation process. [JSON-LD context](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/tec-context.js) and set of custom [JavaScript Functions](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/tec-lib.js) are used to query ECFO KG to retrieve the information about the Emission Conversion Factors and to generate portion of the provenance trace. 
+
+An example of generating description of activity with a connected input entity in the [code that calculates the emissions](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/grayscale.js): 
+
+````
+	let wattConsumption = createCalculationEntity("Watt Consumption", state.gpus[gpu].watt, "http://www.wikidata.org/entity/Q25236", "http://www.wikidata.org/entity/Q1053879", graphLD, "")
+	
+	let electricityUseEstimate = createCalculationActivity("https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator", "Estimate Electricity Use in kW/h", graphLD)
+	
+	linkInputEntityToActivity(wattConsumption, electricityUseEstimate, graphLD)
+````
+
+An example call to [Java-based backend](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/java/io/github/tectoolkit/calculator/Controller.java) that queries the ECFO KG for corresponding conversion factors:
+
+````
+fetch('/cf_info_all?region=' + region)
+		.then((response) =>
+			response.json()
+		)
+		.then((CF_data) => {
+			
+			....
+			
+			})
+````
+
+
+A SPARQL query executed to retrieve conversion factors for specific region of compute: 
+````
+PREFIX  geo:  <http://www.opengis.net/ont/geosparql#>
+PREFIX  qudt: <http://qudt.org/schema/qudt/>
+PREFIX  peco: <https://w3id.org/peco#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  ecfo: <https://w3id.org/ecfo#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  time: <http://www.w3.org/2006/time#>
+PREFIX  prov: <http://www.w3.org/ns/prov#>
+
+SELECT DISTINCT  ?id ?sourceUnit ?targetUnit ?source ?value ?applicableLocation ?applicablePeriodStart ?applicablePeriodEnd ?emissionTargetSymbol
+WHERE
+  { ?id       rdf:type            ecfo:EmissionConversionFactor ;
+              ecfo:hasTargetUnit  ?targetUnitInst .
+    ?targetUnitInst
+              rdfs:label          "kilogram"@en .
+    ?id ecfo:hasEmissionTarget/rdfs:label ?emissionTargetSymbol
+      { ?id ecfo:hasApplicableLocation/rdfs:label "europe-west2"@en }
+    UNION
+      { ?id (ecfo:hasApplicableLocation/geo:ehContains)/rdfs:label "europe-west2"@en .
+        ?id  ecfo:hasScope         ecfo:Scope2 ;
+             ecfo:hasTag           <https://w3id.org/ecfkg/i/UK%20electricity> ;
+             ecfo:hasEmissionTarget  <http://www.wikidata.org/entity/Q1933140>
+      }
+    OPTIONAL
+      { ?id  ecfo:hasSourceUnit  ?sourceUnitInst }
+    OPTIONAL
+      { ?id  ecfo:hasApplicableLocation  ?location }
+    OPTIONAL
+      { ?id (ecfo:hasApplicablePeriod/time:hasBeginning)/time:inXSDDate ?applicablePeriodStart }
+    OPTIONAL
+      { ?id (ecfo:hasApplicablePeriod/time:hasEnd)/time:inXSDDate ?applicablePeriodEnd }
+    OPTIONAL
+      { ?id  prov:wasDerivedFrom  ?source }
+    OPTIONAL
+      { ?id  rdf:value  ?value }
+    OPTIONAL
+      { ?location  rdfs:label  ?applicableLocation }
+    OPTIONAL
+      { ?targetUnitInst
+                  qudt:abbreviation  ?targetUnit
+      }
+    OPTIONAL
+      { ?sourceUnitInst
+                  qudt:abbreviation  ?sourceUnit
+      }
+  }
+ORDER BY DESC(?applicablePeriodEnd)
+````
 ## Data Validation
 
 The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) runs Datalog rules to detect violations of conditions according to ECFO.
