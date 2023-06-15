@@ -47,6 +47,10 @@ Available at: [https://w3id.org/ecfo](https://w3id.org/ecfo)
 
 Aims to provide a generic model for describing the values of Emission Conversion Factors and their associated metadata.
 
+![ecfo](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/c352e7e3-8bd8-4391-be94-a36e406cfee6)
+
+
+
 ## The Provenance of Emission Calculations Ontoltogy (PECO)
 
 <!-- <img src="assets/Logo%20PECO.svg" alt="PECO Logo" width=20% /> -->
@@ -54,6 +58,8 @@ Aims to provide a generic model for describing the values of Emission Conversion
 Available at: [https://w3id.org/peco](https://w3id.org/peco)
 
 Defines a vocabulary for describing provenance traces of carbon emissions calculations by capturing the quantifiable measurements of energy estimates (i.e., activity data and emission conversion factors used to estimate the carbon emissions).
+
+![peco](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/ee9de0fa-8191-4226-a6f5-cddc423ed192)
 
 # Knowledge Graphs
 
