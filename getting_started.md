@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
+
 [back](./)
-# How to Use this Resource
+
+# Getting started
 
 [ECFO](/#the-emission-conversion-factor-ontology-ecfo) and [PECO](/#the-provenance-of-emission-calculations-ontology-peco) ontologies may be use together or separately. For example, the [Emissions Conversion Factors KG](/#emissions-conversion-factors) uses ECFO and can be used as a look up database of conversion factors. 
 
@@ -13,9 +15,9 @@ For further information on ECFO and PECO follow the w3id link that will let you 
 Please see the [SMLI Calculator](/#smli-calculator) for a link to online demo and source code to further explore how the individual components of the TEC toolkit might be integrated in a software application.
 
 
-# Ontologies
+## Ontologies
 
-## The Emission Conversion Factor Ontology (ECFO)
+### The Emission Conversion Factor Ontology (ECFO)
 
 ![ECFO Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20ECFO.svg){: width="10%"}
 
@@ -27,8 +29,8 @@ Aims to provide a generic model for describing the values of Emission Conversion
 
 ![ecfo](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/c352e7e3-8bd8-4391-be94-a36e406cfee6)
 
-### Running example
-TO DO
+Example
+**TO DO**
 
 ## The Provenance of Emission Calculations Ontology (PECO)
 
@@ -42,12 +44,12 @@ Defines a vocabulary for describing provenance traces of carbon emissions calcul
 
 ![peco](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/ee9de0fa-8191-4226-a6f5-cddc423ed192)
 
-### Running example
+**Example**
 TO DO
 
-# Knowledge Graphs
+## Knowledge Graphs
 
-## Emissions Conversion Factors
+### Emissions Conversion Factors
 
 * [SPARQL endpoint](https://sparql.cf.linkeddata.es/cf/). See [https://github.com/TEC-Toolkit/cfkg#sparql-endpoint](https://github.com/TEC-Toolkit/cfkg#sparql-endpoint) to learn more on doing queries.
 * [Knowledge Graph in Turtle](https://zenodo.org/record/7916096#.ZFugTo1BxEY)
@@ -68,9 +70,9 @@ Emission Conversion Factors described using ECFO [GitHub repository](https://git
 | 2016       | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 4977                         |
 | 2002 -2019 | <a href="https://github.com/mlco2/impact">MLI</a>                                                                | Various | A collection of Scope 2 electricity emission conversion factors from a range of sources.                                          | 81                           |
 
-# Software
+## Software
 
-## SMLI Calculator
+### SMLI Calculator
 
 The [Semantic Machine Lerning Impact Calculator](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator) is an extension of the [Machine learning Impact (MLI) calculator](https://mlco2.github.io/impact\#compute) with semantic components to perform the emission calculations.
 
@@ -194,7 +196,7 @@ The provenance trace can be also downloaded by the user.
 For expanded example of provenance trace and additional queries please see [here](https://github.com/TEC-Toolkit/PECO/tree/main/cqs)
 
 
-## Data Validation
+### Data Validation
 
 The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) runs Datalog rules to detect violations of conditions according to ECFO.
 

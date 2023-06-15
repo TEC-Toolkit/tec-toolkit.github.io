@@ -46,7 +46,7 @@ The Emission Conversion Factor Knowledge Graph (based on ECFO) contains over 40.
 - The [Semantic Machine Lerning Impact Calculator](https://calculator.linkeddata.es) is an extension of the [Machine learning Impact (MLI) calculator](https://mlco2.github.io/impact\#compute) with semantic components to perform the emission calculations.
 - The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) runs Datalog rules to detect violations of conditions according to ECFO.
 
-## Getting started
+# Getting started
 Please see our [project documentation](./getting_started.html) for more information about searching and working with Emission Conversion Factors, how to download and query provenance traces, how to perform validation queries and how to use the ontologies.
 
 

@@ -1,6 +1,6 @@
 <div style="text-align: center">
 
-<img src="assets/Logo%20TEC.svg" alt="TEC-Toolkit Logo" width=20% />
+<img src="assets/Logo%20TEC.svg" alt="TEC-Toolkit Logo" width=10% />
 
 # TEC-Toolkit
 
