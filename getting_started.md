@@ -41,6 +41,23 @@ Point to the notebook where a more detailed analysis can be seen. Show the pictu
 
 * See [here](https://github.com/TEC-Toolkit/PECO/blob/main/cqs/README.md) for a list of example SPARQL queries that can be run on this data.
 
+For example, this query will retrieve the emission score and the activity for which this  score was calculated: 
+  ```
+PREFIX ecfo: <https://w3id.org/ecfo#>  
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>  
+PREFIX prov:<http://www.w3.org/ns/prov#> 
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+
+Select ?activityL ?score
+Where {
+    ?activity  rdf:type   peco:EmissionGenerationActivity ;
+               rdfs:label ?activityL;
+               peco:hasEmissionScore/qudt:value ?score.    
+}
+  ```
+
 * For a full working example refer to this [Colab notebook](https://colab.research.google.com/drive/1wl9xA-0HQ5aWI-u517gC1ZwsC10eJZQa?usp=sharing).
 
 
