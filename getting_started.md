@@ -47,7 +47,7 @@ For example, this query will retrieve the emission score and the activity for wh
 ```sparql
 PREFIX peco: <https://w3id.org/peco#>
 PREFIX qudt: <http://qudt.org/schema/qudt/>
-PREFIX rdf : <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?activityL ?score
@@ -93,16 +93,16 @@ Defines a vocabulary for describing provenance traces of carbon emissions calcul
 
 Emission Conversion Factors described using ECFO [GitHub repository](https://github.com/TEC-Toolkit/cfkg):
 
-| Year       | Publisher                                                                                                        | Country | Description                                                                                                                       | Number of Conversion Factors |
-| :--------- | :--------------------------------------------------------------------------------------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------- | :--------------------------- |
-| 2022       | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6464                         |
-| 2021       | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6284                         |
-| 2020       | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6140                         |
-| 2019       | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6163                         |
-| 2018       | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6192                         |
-| 2017       | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6178                         |
-| 2016       | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 4977                         |
-| 2002 -2019 | <a href="https://github.com/mlco2/impact">MLI</a>                                                                | Various | A collection of Scope 2 electricity emission conversion factors from a range of sources.                                          | 81                           |
+| Year       | Publisher                                                                                             | Country | Description                                                                                                                       | Number of Conversion Factors |
+| :--------- | :---------------------------------------------------------------------------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------- | :--------------------------- |
+| 2022       | [BEIS](https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting) | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6464                         |
+| 2021       | [BEIS](https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting) | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6284                         |
+| 2020       | [BEIS](https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting) | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6140                         |
+| 2019       | [BEIS](https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting) | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6163                         |
+| 2018       | [BEIS](https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting) | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6192                         |
+| 2017       | [BEIS](https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting) | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6178                         |
+| 2016       | [BEIS](https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting) | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 4977                         |
+| 2002 -2019 | [MLI](https://github.com/mlco2/impact)                                                                | Various | A collection of Scope 2 electricity emission conversion factors from a range of sources.                                          | 81                           |
 
 ## Software
 
@@ -137,10 +137,10 @@ A SPARQL query executed to retrieve conversion factors for a specific region of 
 
 ```sparql
 PREFIX  ecfo: <https://w3id.org/ecfo#>
-PREFIX  geo :  <http://www.opengis.net/ont/geosparql#>
+PREFIX  geo:   <http://www.opengis.net/ont/geosparql#>
 PREFIX  prov: <http://www.w3.org/ns/prov#>
 PREFIX  qudt: <http://qudt.org/schema/qudt/>
-PREFIX  rdf :  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX  time: <http://www.w3.org/2006/time#>
 
