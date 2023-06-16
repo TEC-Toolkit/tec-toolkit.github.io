@@ -209,7 +209,7 @@ WHERE
 
 The provenance trace can be also downloaded by the user. 
 
-TO DO: show picture
+![download_trace](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/a7f2088b-e2b2-4eca-b395-a753e0140ffb)
 
 
 For expanded example of provenance trace and additional queries please see [our competency questions](https://github.com/TEC-Toolkit/PECO/tree/main/cqs)
