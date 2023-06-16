@@ -17,7 +17,8 @@ Please see the [SMLI Calculator](/#smli-calculator) for a link to online demo an
 
 The simplest way of browsing the metadata of an emission factor is just pasting its URI in a browser. For example, [https://w3id.org/ecfkg/i/UK/BEIS/2019/CF_1](https://w3id.org/ecfkg/i/UK/BEIS/2019/CF_1) will take you to an online page like this one: 
 
-[INSERT PIC]
+
+![rdf_explorer](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/3984bfc1-0167-42bf-b609-d77c38b3f187)
 
 where you can see the units, value and source (among others) of the emission conversion factor. However, how to get to the ECF URI? One way of doing it is using SPARQL queries. We have set up a simple [SPARQL query interface](https://query.cf.linkeddata.es/query) where you can create SPARQL queries and retrieve the ids of the ECFs you may be interested in. For example, to retrieve ECFs related to "Butane" in 2020, just issue the following query:
 
