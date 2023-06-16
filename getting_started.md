@@ -13,19 +13,36 @@ For further information on ECFO and PECO follow the w3id link that will let you 
 
 Please see the [SMLI Calculator](/#smli-calculator) for a link to online demo and source code to further explore how the individual components of the TEC toolkit might be integrated in a software application.
 
-## Retrieve an Emission Conversion Factor Metadata
+## Retrieve an Emission Conversion Factor (ECF) Metadata 
+
+The simplest way of browsing the metadata of an emission factor is just pasting its URI in a browser. For example, `https://w3id.org/ecfkg/i/UK/BEIS/2019/CF_1` will take you to an online page like this one: 
+
+[INSERT PIC]
+
+where you can see the units, value and source (among others) of the emission conversion factor. However, how to get to the ECF URI? One way of doing it is using SPARQL queries. We have set up a simple [SPARQL query interface](https://query.cf.linkeddata.es/query) where you can create SPARQL queries and retrieve the ids of the ECFs you may be interested in. For example, to retrieve ECFs related to "Butane" in 2020, just issue the following query:
+
+````
+TO DO
+````
+
+The results will include several ECFS, make sure you read their details before selecting the one of interest:
+```
+TO DO show results
+```
 
 ## Plotting the evolution of an Emission Conversion Factor 
 
-## Download a PECO trace
+Point to the notebook where a more detailed analysis can be seen. Show the picture of the plot. Put the notebooks online
 
+## Download a PECO trace
+[ADD step by step here]
 
 
 ## Ontologies
 
 ### The Emission Conversion Factor Ontology (ECFO)
 
-![ECFO Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20ECFO.svg){: width="10%"}
+![ECFO Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20ECFO.svg){: width="5%"}
 
 Available at: [https://w3id.org/ecfo](https://w3id.org/ecfo)
 
@@ -38,7 +55,7 @@ Aims to provide a generic model for describing the values of Emission Conversion
 
 ### The Provenance of Emission Calculations Ontology (PECO)
 
- ![PECO Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20PECO.svg){: width="10%"}
+ ![PECO Logo](https://raw.githubusercontent.com/TEC-Toolkit/tec-toolkit.github.io/main/assets/Logo%20PECO.svg){: width="5%"}
 
 Available at: [https://w3id.org/peco](https://w3id.org/peco)
 
