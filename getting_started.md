@@ -107,9 +107,6 @@ Emission Conversion Factors described using ECFO [GitHub repository](https://git
 | 2016       | <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">BEIS</a> | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 4977                         |
 | 2002 -2019 | <a href="https://github.com/mlco2/impact">MLI</a>                                                                | Various | A collection of Scope 2 electricity emission conversion factors from a range of sources.                                          | 81                           |
 
-### Additional Sample queries
-TO DO (separate page)
-
 ## Software
 
 ### SMLI Calculator
