@@ -179,6 +179,11 @@ ORDER BY DESC(?applicablePeriodEnd)
 
 The calculator also produces JSON-LD descriptions of provenance traces documenting the individual steps of emissions calculation process. [JSON-LD context](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/tec-context.js) and set of custom [JavaScript Functions](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/tec-lib.js) are used to query ECFO KG to retrieve the information about the Emission Conversion Factors and to generate portion of the provenance trace. 
 
+Together with the calculated emission score, the GUI also shows detailed information about the activities performed during the calculation process, the conversion factor used and other relevant conversion factors that are applicable to the user input: 
+
+![result](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/8c49385b-43d3-443c-ab2a-af2256995648)
+
+
 An example of generating description of activity with a connected input entity in the [code that calculates the emissions](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/grayscale.js): 
 
 ````
@@ -212,6 +217,9 @@ WHERE
     FILTER ( ?time < now() )
   }
 ````
+The results are presented in teh GUI: 
+
+![validation](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/92f8272a-5b65-4274-9045-9a2143edd794)
 
 The provenance trace can be also downloaded by the user. 
 
