@@ -187,11 +187,11 @@ Together with the calculated emission score, the GUI also shows detailed informa
 An example of generating description of activity with a connected input entity in the [code that calculates the emissions](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/grayscale.js): 
 
 ````
-	let wattConsumption = createCalculationEntity("Watt Consumption", state.gpus[gpu].watt, "http://www.wikidata.org/entity/Q25236", "http://www.wikidata.org/entity/Q1053879", graphLD, "")
+let wattConsumption = createCalculationEntity("Watt Consumption", state.gpus[gpu].watt, "http://www.wikidata.org/entity/Q25236", "http://www.wikidata.org/entity/Q1053879", graphLD, "")
 	
-	let electricityUseEstimate = createCalculationActivity("https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator", "Estimate Electricity Use in kW/h", graphLD)
+let electricityUseEstimate = createCalculationActivity("https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator", "Estimate Electricity Use in kW/h", graphLD)
 	
-	linkInputEntityToActivity(wattConsumption, electricityUseEstimate, graphLD)
+linkInputEntityToActivity(wattConsumption, electricityUseEstimate, graphLD)
 ````
 
 The calculator also executes a number of validation queries, for example, to check if the latest available conversion factor is up to date: 
