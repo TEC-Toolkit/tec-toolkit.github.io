@@ -15,7 +15,7 @@ Please see the [SMLI Calculator](/#smli-calculator) for a link to online demo an
 
 ## Retrieve an Emission Conversion Factor (ECF) Metadata 
 
-The simplest way of browsing the metadata of an emission factor is just pasting its URI in a browser. For example, `https://w3id.org/ecfkg/i/UK/BEIS/2019/CF_1` will take you to an online page like this one: 
+The simplest way of browsing the metadata of an emission factor is just pasting its URI in a browser. For example, [https://w3id.org/ecfkg/i/UK/BEIS/2019/CF_1](https://w3id.org/ecfkg/i/UK/BEIS/2019/CF_1) will take you to an online page like this one: 
 
 [INSERT PIC]
 
