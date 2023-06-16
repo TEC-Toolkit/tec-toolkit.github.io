@@ -90,9 +90,39 @@ Defines a vocabulary for describing provenance traces of carbon emissions calcul
 
 * [SPARQL endpoint](https://sparql.cf.linkeddata.es/cf/). See [https://github.com/TEC-Toolkit/cfkg#sparql-endpoint](https://github.com/TEC-Toolkit/cfkg#sparql-endpoint) to learn more on doing queries.
 * [Knowledge Graph in Turtle](https://zenodo.org/record/7916096#.ZFugTo1BxEY)
+* [GitHub repository](https://github.com/TEC-Toolkit/cfkg)
 
-Emission Conversion Factors described using ECFO [GitHub repository](https://github.com/TEC-Toolkit/cfkg):
+In the following, we outline the Emission Conversion Factors described using ECFO.
 
+### BEIS (UK)
+
+Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas.
+
+* Publisher: [BEIS](https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting)
+* Country: UK
+
+| Year  | Number of CFs |
+| :---: | :-----------: |
+| 2022  |     6464      |
+| 2021  |     6284      |
+| 2020  |     6140      |
+| 2019  |     6163      |
+| 2018  |     6192      |
+| 2017  |     6178      |
+| 2016  |     4977      |
+
+### MLI
+
+A collection of Scope 2 electricity emission conversion factors from a range of sources.
+
+* Publisher: [MLI](https://github.com/mlco2/impact) 
+* Country: Various
+
+|    Year    | Number of CFs |
+| :--------: | :-----------: |
+| 2002 -2019 |      81       |
+
+<!--
 | Year       | Publisher                                                                                             | Country | Description                                                                                                                       | Number of Conversion Factors |
 | :--------- | :---------------------------------------------------------------------------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------- | :--------------------------- |
 | 2022       | [BEIS](https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting) | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6464                         |
@@ -103,6 +133,7 @@ Emission Conversion Factors described using ECFO [GitHub repository](https://git
 | 2017       | [BEIS](https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting) | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 6178                         |
 | 2016       | [BEIS](https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting) | UK      | Official list of emission conversion factors for use by UK and international organisations to report on greenhouse gas emissions. | 4977                         |
 | 2002 -2019 | [MLI](https://github.com/mlco2/impact)                                                                | Various | A collection of Scope 2 electricity emission conversion factors from a range of sources.                                          | 81                           |
+-->
 
 ## Software
 
@@ -112,8 +143,9 @@ The [Semantic Machine Learning Impact Calculator](https://github.com/TEC-Toolkit
 
 ***SMLI Demo***
 
-[Demo link](https://calculator.linkeddata.es)
-(currently only Chrome is supported)
+An online demo can be found at [this link](https://calculator.linkeddata.es)
+
+(Please note that currently only Chromium-based browsers are supported)
 
 ***How it works***
 
@@ -122,14 +154,12 @@ SMLI Calculator queries the live ECFO KG to retrieve the information about the a
 An example call to [Java-based backend](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/java/io/github/tectoolkit/calculator/Controller.java) that queries the ECFO KG for corresponding conversion factors:
 
 ````java
-fetch('/cf_info_all?region=' + region)
+fetch("/cf_info_all?region=" + region)
     .then((response) =>
       response.json()
     )
     .then((CF_data) =>
-      {
-        [...]
-      }
+      { [...] }
     )
 ````
 
