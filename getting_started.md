@@ -35,8 +35,13 @@ TO DO show results
 
 Point to the notebook where a more detailed analysis can be seen. Show the picture of the plot. Put the notebooks online
 
-## Download a PECO trace
-[ADD step by step here]
+## PECO trace
+
+* To test an example provenance trace of emission calculations use this [TTL file](https://github.com/TEC-Toolkit/PECO/blob/main/cqs/provenance_trace.ttl).
+
+* See [here](https://github.com/TEC-Toolkit/PECO/blob/main/cqs/README.md) for a list of example SPARQL queries that can be run on this data.
+
+* For a full working example refer to this [Colab notebook](https://colab.research.google.com/drive/1wl9xA-0HQ5aWI-u517gC1ZwsC10eJZQa?usp=sharing).
 
 
 ## Ontologies
