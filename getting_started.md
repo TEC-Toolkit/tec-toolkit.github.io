@@ -143,7 +143,7 @@ The [Semantic Machine Learning Impact Calculator](https://github.com/TEC-Toolkit
 
 ***SMLI Demo***
 
-An online demo can be found at [this link](https://calculator.linkeddata.es)
+An online demo can be found at [this link](https://calculator.linkeddata.es).
 
 (Please note that currently only Chromium-based browsers are supported)
 
@@ -218,7 +218,7 @@ Together with the calculated emission score, the GUI also shows detailed informa
 
 An example of generating description of activity with a connected input entity in the [code that calculates the emissions](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator/blob/main/src/main/resources/static/js/grayscale.js):
 
-```java
+```javascript
 let wattConsumption = createCalculationEntity("Watt Consumption", state.gpus[gpu].watt, "http://www.wikidata.org/entity/Q25236", "http://www.wikidata.org/entity/Q1053879", graphLD, "")
 
 let electricityUseEstimate = createCalculationActivity("https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator", "Estimate Electricity Use in kW/h", graphLD)
@@ -249,14 +249,28 @@ The results are presented in the GUI:
 
 ![Validation](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/92f8272a-5b65-4274-9045-9a2143edd794)
 
-The provenance trace can be also downloaded by the user.
+The provenance trace can be also downloaded by the user:
 
 ![Download trace](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/a7f2088b-e2b2-4eca-b395-a753e0140ffb)
 
-For expanded example of provenance trace and additional queries please see [our competency questions](https://github.com/TEC-Toolkit/PECO/tree/main/cqs)
+For expanded example of provenance trace and additional queries please see [our competency questions](https://github.com/TEC-Toolkit/PECO/tree/main/cqs).
 
 ### Data Validation
 
 The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) runs Datalog rules to detect violations of conditions according to ECFO.
+
+### Functionalities
+
+#### Check if the data are "valid"
+
+1. [Run the data validation module](https://github.com/TEC-Toolkit/Data-Validation#running-rdfox)
+2. Check that all queries have **0** answers
+
+#### Add another validation check
+
+1. Add a file "check-CUSTOM_NAME-rules" with the rules to check
+2. Add a file "check-CUSTOM_NAME-queries" with the `ASK` queries
+   * Note that the queries must return no answer if the check is passed
+3. Add a new command `exec check CUSTOM_NAME` in the "validate" file
 
 [Back to main page](./)
