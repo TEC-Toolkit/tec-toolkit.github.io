@@ -58,7 +58,7 @@ Where {
 }
   ```
 
-* For a full working example refer to this [Colab notebook](https://colab.research.google.com/drive/1wl9xA-0HQ5aWI-u517gC1ZwsC10eJZQa?usp=sharing).
+* You can also run it online in our sample [Colab notebook](https://colab.research.google.com/drive/1wl9xA-0HQ5aWI-u517gC1ZwsC10eJZQa?usp=sharing).
 
 
 ## Ontologies
