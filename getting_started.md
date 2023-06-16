@@ -118,7 +118,7 @@ The [Semantic Machine Lerning Impact Calculator](https://github.com/TEC-Toolkit/
 
 ***SMLI Demo*** 
 
-https://calculator.linkeddata.es  
+[Demo link](https://calculator.linkeddata.es)  
 (currently only Chrome is supported)
 
 
