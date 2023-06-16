@@ -234,7 +234,7 @@ WHERE
     FILTER ( ?time < now() )
   }
 ````
-The results are presented in teh GUI: 
+The results are presented in the GUI: 
 
 ![validation](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/92f8272a-5b65-4274-9045-9a2143edd794)
 
