@@ -18,23 +18,67 @@ Please see the [SMLI Calculator](/#smli-calculator) for a link to online demo an
 
 The simplest way of browsing the metadata of an emission factor is just pasting its URI in a browser. For example, [https://w3id.org/ecfkg/i/UK/BEIS/2019/CF_1](https://w3id.org/ecfkg/i/UK/BEIS/2019/CF_1) will take you to an online page like this one:
 
-![RDF explorer](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/3984bfc1-0167-42bf-b609-d77c38b3f187)
+![RDF explorer](assets/rdf_explorer.jpg)
 
-where you can see the units, value and source (among others) of the emission conversion factor. However, how to get to the ECF URI? One way of doing it is using SPARQL queries. We have set up a simple [SPARQL query interface](https://query.cf.linkeddata.es/query) where you can create SPARQL queries and retrieve the IDs of the ECFs you may be interested in. For example, to retrieve ECFs related to "Butane" in 2020, just issue the following query:
+where you can see the units, value and source (among others) of the emission conversion factor. However, how to get to the ECF URI? One way of doing it is using SPARQL queries. We have set up a simple [SPARQL query interface](https://query.cf.linkeddata.es/query) where you can create SPARQL queries and retrieve the IDs of the ECFs you may be interested in. For example, to retrieve ECFs related to "Butane" to CO2e (in kg) and within Scope 1, just issue the following query:
 
 ```sparql
-TO DO
-```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ecfo: <https://w3id.org/ecfo#>
+prefix qudt: <http://qudt.org/schema/qudt/>
 
-The results will include several ECFs, make sure you read their details before selecting the one of interest:
+select ?context ?cf ?s ?t where{
+    ?cf ecfo:hasTag ?tag;
+        ecfo:hasEmissionSource ?s;
+        ecfo:hasEmissionTarget ?t;
+        ecfo:hasTargetUnit ?tu;
+    ecfo:hasScope <https://w3id.org/ecfo#Scope1>.
+    ?tag rdfs:label "Butane"@en.
+    ?t rdfs:label "carbon dioxide equivalent"@en .
+    ?tu qudt:abbreviation "kg"@en.
+   optional {
+     ?cf <https://w3id.org/ecfo#hasAdditionalContext> ?context
+   }
+}
+```
+The results will include several ECFs, make sure you read their details before selecting the one of interest. For example two of the results include:
 
 ```
-TO DO show results
+{'context': {'type': 'literal', 'xml:lang': 'en', 'value': 'Net CV'}, 'cf': {'type': 'uri', 'value': 'https://w3id.org/ecfkg/i/UK/BEIS/2022/CF_9'}, 's': {'type': 'uri', 'value': 'https://w3id.org/ecfkg/i/Gaseous_fuels_Butane'}, 't': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q1933140'}}
+{'context': {'type': 'literal', 'xml:lang': 'en', 'value': 'Energy - Gross CV'}, 'cf': {'type': 'uri', 'value': 'https://w3id.org/ecfkg/i/UK/BEIS/2021/CF_1'}, 's': {'type': 'uri', 'value': 'https://w3id.org/ecfkg/i/Gaseous_fuels_Butane'}, 't': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q1933140'}}
+
+```
+Note that these include conversion factors as indicated, but within two different contexts: one includes the gross calorific value, while the other includes the net calorific value. Adding a filter for retrieving only the gross calorific value, we get all the ECF values for Butane to CO2e (in kg) throughout the availbale years (2016-2022):
+
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ecfo: <https://w3id.org/ecfo#>
+
+select ?cf ?value ?start ?end ?context where{
+    <https://w3id.org/ecfkg/i/UK/BEIS/2019/CF_1> ecfo:hasEmissionSource ?e;
+      ecfo:hasEmissionTarget ?t.
+   ?cf ecfo:hasEmissionSource ?e;
+    ecfo:hasEmissionTarget ?t;
+    ecfo:hasAdditionalContext ?context;
+    ecfo:hasApplicableLocation ?region;
+    rdf:value ?value;
+    ecfo:hasScope ecfo:Scope1;
+    ecfo:hasApplicablePeriod ?period.
+    filter(regex(?context,"Gross cv","i")) .
+    ?period <http://www.w3.org/2006/time#hasBeginning>/<http://www.w3.org/2006/time#inXSDDate> ?start;
+         <http://www.w3.org/2006/time#hasEnd>/<http://www.w3.org/2006/time#inXSDDate> ?end
+
+}
 ```
 
 ## Plotting the evolution of an Emission Conversion Factor
 
-Point to the notebook where a more detailed analysis can be seen. Show the picture of the plot. Put the notebooks online
+Once we have retrieved the values of the ECF of interest, we can easily plot the results. The following image shows the variation for butane to CO2e from 2016-2022. Please note that we have adjusted the axis to show the differences, since the variation of this particular ECF is minimal:
+
+![Butane ECF](assets/graph.png)
+
+All these queries and plot are available in a [Jupyter notebook](https://github.com/TEC-Toolkit/cfkg/blob/main/tutorial/Using_CFKG_Evolution_of_Conversion_Factors_through_the_years.ipynb) in our [cfkg repository](https://github.com/EATS-UoA/cfkg).
 
 ## PECO trace
 
@@ -88,8 +132,8 @@ Defines a vocabulary for describing provenance traces of carbon emissions calcul
 
 ## Emissions Conversion Factors KG
 
-* [SPARQL endpoint](https://sparql.cf.linkeddata.es/cf/). See [https://github.com/TEC-Toolkit/cfkg#sparql-endpoint](https://github.com/TEC-Toolkit/cfkg#sparql-endpoint) to learn more on doing queries.
-* [Knowledge Graph in Turtle](https://zenodo.org/record/7916096#.ZFugTo1BxEY)
+* [SPARQL endpoint interface](https://query.cf.linkeddata.es/). See [https://github.com/TEC-Toolkit/cfkg#sparql-endpoint](https://github.com/TEC-Toolkit/cfkg#sparql-endpoint) to learn more on doing queries. The SPARQL endpoint is at `https://sparql.cf.linkeddata.es/cf/`, but we highly recommend accessing the [query interface](https://query.cf.linkeddata.es/) to perform queries.
+* [Knowledge Graph dump in Turtle](https://zenodo.org/record/7916096#.ZFugTo1BxEY)
 * [GitHub repository](https://github.com/TEC-Toolkit/cfkg)
 
 In the following, we outline the Emission Conversion Factors described using ECFO.
