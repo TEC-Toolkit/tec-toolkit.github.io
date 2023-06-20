@@ -127,7 +127,7 @@ Aims to provide a generic model for describing the values of Emission Conversion
 
 Available at: [https://w3id.org/peco](https://w3id.org/peco)
 
-Evaluation & Examples: [CQs and SPARQL queries](https://github.com/TEC-Toolkit/ECFO/tree/main/cqs)
+Evaluation & Examples: [CQs and SPARQL queries](https://github.com/TEC-Toolkit/PECO/tree/main/cqs)
 
 Defines a vocabulary for describing provenance traces of carbon emissions calculations by capturing the quantifiable measurements of energy estimates (i.e., activity data and emission conversion factors used to estimate the carbon emissions).
 
