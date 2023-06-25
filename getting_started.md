@@ -6,7 +6,9 @@ layout: default
 
 # Getting started
 
-In this page we provide an overview of the entry points for using the TEC-Toolkit resources. [ECFO](/#the-emission-conversion-factor-ontology-ecfo) and [PECO](/#the-provenance-of-emission-calculations-ontology-peco) ontologies may be use together or separately. For example, the [Emissions Conversion Factors KG](/#emissions-conversion-factors) uses ECFO and can be used as a lookup database of conversion factors (see [how below](/#retrieve-a-conversion-factor)).
+In this page we provide an overview of the entry points for using the TEC-Toolkit resources.
+[ECFO](/#the-emission-conversion-factor-ontology-ecfo) and [PECO](/#the-provenance-of-emission-calculations-ontology-peco) ontologies may be used together or separately.
+For example, the [Emissions Conversion Factors KG](/#emissions-conversion-factors) uses ECFO and can be used as a lookup database of conversion factors (see [how below](/#retrieve-a-conversion-factor)).
 
 PECO may be used to describe the emission calculation process, which typically also involves the conversion factors and hence the combination of PECO and ECFO may be desired. Semantic Machine Learning Impact calculator is a prototype software that demonstrates how PECO and Emissions Conversion Factors KG can be embedded within a web-based application [see how can you download a PECO trace](/#download-a-peco-trace).
 
