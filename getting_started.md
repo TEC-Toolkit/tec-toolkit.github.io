@@ -45,9 +45,45 @@ select ?context ?cf ?s ?t where{
 The results will include several ECFs, make sure you read their details before selecting the one of interest. For example two of the results include:
 
 ```json
-{'context': {'type': 'literal', 'xml:lang': 'en', 'value': 'Energy - Gross CV'}, 'cf': {'type': 'uri', 'value': 'https://w3id.org/ecfkg/i/UK/BEIS/2019/CF_1'}, 's': {'type': 'uri', 'value': 'https://w3id.org/ecfkg/i/Gaseous_fuels_CNG'}, 't': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q1933140'}}
-{'context': {'type': 'literal', 'xml:lang': 'en', 'value': 'Tonnes'}, 'cf': {'type': 'uri', 'value': 'https://w3id.org/ecfkg/i/UK/BEIS/2019/CF_13'}, 's': {'type': 'uri', 'value': 'https://w3id.org/ecfkg/i/Gaseous_fuels_CNG'}, 't': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q1933140'}}
+{
+    "context": {
+        "type": "literal",
+        "xml:lang": "en",
+        "value": "Energy - Gross CV"
+    },
+    "cf": {
+        "type": "uri",
+        "value": "https://w3id.org/ecfkg/i/UK/BEIS/2019/CF_1"
+    },
+    "s": {
+        "type": "uri",
+        "value": "https://w3id.org/ecfkg/i/Gaseous_fuels_CNG"
+    },
+    "t": {
+        "type": "uri",
+        "value": "http://www.wikidata.org/entity/Q1933140"
+    }
+}
 
+{
+    "context": {
+        "type": "literal",
+        "xml:lang": "en",
+        "value": "Tonnes"
+    },
+    "cf": {
+        "type": "uri",
+        "value": "https://w3id.org/ecfkg/i/UK/BEIS/2019/CF_13"
+    },
+    "s": {
+        "type": "uri",
+        "value": "https://w3id.org/ecfkg/i/Gaseous_fuels_CNG"
+    },
+    "t": {
+        "type": "uri",
+        "value": "http://www.wikidata.org/entity/Q1933140"
+    }
+}
 ```
 Note that these include conversion factors as indicated, but within two different contexts: one includes the gross calorific value, while the other includes the net calorific value. Adding a filter for retrieving only the gross calorific value, we get all the ECF values for Butane to CO2e (in kg) throughout the availbale years (2016-2022):
 
