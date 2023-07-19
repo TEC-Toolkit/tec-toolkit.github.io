@@ -121,7 +121,7 @@ Once we have retrieved the values of the ECF of interest, we can easily plot the
 The following image shows the variation for CNG to CO2e from 2016-2022 for both Gross and Net CV.
 Please note that we have adjusted the axis to show the differences, since the variation of this particular ECF is minimal:
 
-![CNG ECF](assets/graph.png)
+![CNG ECF chart](assets/chart.svg)
 
 All these queries and plot are available in a [Jupyter notebook](https://github.com/TEC-Toolkit/cfkg/blob/main/tutorial/Using_CFKG_Evolution_of_Conversion_Factors_through_the_years.ipynb) in our [cfkg repository](https://github.com/EATS-UoA/cfkg).
 
@@ -161,7 +161,7 @@ Evaluation & Examples: [CQs and SPARQL queries](https://github.com/TEC-Toolkit/P
 
 Aims to provide a generic model for describing the values of Emission Conversion Factors and their associated metadata.
 
-![ECFO](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/c352e7e3-8bd8-4391-be94-a36e406cfee6)
+![ECFO](assets/ECFO.svg)
 
 ### The Provenance of Emission Calculations Ontology (PECO)
 
@@ -173,7 +173,7 @@ Evaluation & Examples: [CQs and SPARQL queries](https://github.com/TEC-Toolkit/P
 
 Defines a vocabulary for describing provenance traces of carbon emissions calculations by capturing the quantifiable measurements of energy estimates (i.e., activity data and emission conversion factors used to estimate the carbon emissions).
 
-![PECO](https://github.com/TEC-Toolkit/tec-toolkit.github.io/assets/4025828/ee9de0fa-8191-4226-a6f5-cddc423ed192)
+![PECO](assets/PECO.svg)
 
 ## Emissions Conversion Factors KG
 
