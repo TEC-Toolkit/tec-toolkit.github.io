@@ -87,35 +87,39 @@ The results will include several ECFs, make sure you read their details before s
     }
 }
 ```
-Note that these include conversion factors as indicated, but within two different contexts: one includes the gross calorific value, while the other includes the net calorific value. Adding a filter for retrieving only the gross calorific value, we get all the ECF values for Butane to CO2e (in kg) throughout the availbale years (2016-2022):
+Note that these include conversion factors as indicated with two different contexts: one includes the Gross Calorific Value, while the other includes the Net Calorific Value.
+
+The following query gets all the ECF values throughout the availbale years (2016-2022):
 
 ```sparql
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ecfo: <https://w3id.org/ecfo#>
 PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX time: <http://www.w3.org/2006/time#>
 
-select ?cf ?value ?start ?end ?context where{
+SELECT ?cf ?value ?start ?end ?context
+WHERE {
     ?cf ecfo:hasTag ?tag;
-        ecfo:hasEmissionSource ?s;
         ecfo:hasEmissionTarget ?t;
         ecfo:hasTargetUnit ?tu;
-        ecfo:hasAdditionalContext ?context; 
+        ecfo:hasAdditionalContext ?context;
         rdf:value ?value;
         ecfo:hasScope ecfo:Scope1;
         ecfo:hasApplicablePeriod ?period.
-    filter(regex(?context,"Gross cv","i")) . 
     ?tag rdfs:label "CNG"@en.
-    ?t rdfs:label "carbon dioxide equivalent"@en .
+    ?t rdfs:label "carbon dioxide equivalent"@en.
     ?tu qudt:abbreviation "kg"@en.
-    ?period <http://www.w3.org/2006/time#hasBeginning>/<http://www.w3.org/2006/time#inXSDDate> ?start;
-         <http://www.w3.org/2006/time#hasEnd>/<http://www.w3.org/2006/time#inXSDDate> ?end
+    ?period time:hasBeginning/time:inXSDDate ?start;
+            time:hasEnd/time:inXSDDate ?end.
 }
 ```
 
 ## Plotting the evolution of an Emission Conversion Factor
 
-Once we have retrieved the values of the ECF of interest, we can easily plot the results. The following image shows the variation for CNG to CO2e from 2016-2022. Please note that we have adjusted the axis to show the differences, since the variation of this particular ECF is minimal:
+Once we have retrieved the values of the ECF of interest, we can easily plot the results.
+The following image shows the variation for CNG to CO2e from 2016-2022 for both Gross and Net CV.
+Please note that we have adjusted the axis to show the differences, since the variation of this particular ECF is minimal:
 
 ![CNG ECF](assets/graph.png)
 
