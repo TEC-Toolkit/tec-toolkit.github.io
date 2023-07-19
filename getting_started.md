@@ -30,7 +30,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ecfo: <https://w3id.org/ecfo#>
 prefix qudt: <http://qudt.org/schema/qudt/>
 
-select ?context ?cf ?s ?t where{
+SELECT ?context ?cf ?s ?t
+WHERE {
     ?cf ecfo:hasTag ?tag;
         ecfo:hasEmissionSource ?s;
         ecfo:hasEmissionTarget ?t;
@@ -39,7 +40,7 @@ select ?context ?cf ?s ?t where{
     ?tag rdfs:label "CNG"@en.
     ?t rdfs:label "carbon dioxide equivalent"@en .
     ?tu qudt:abbreviation "kg"@en.
-   optional {
+   OPTIONAL {
      ?cf <https://w3id.org/ecfo#hasAdditionalContext> ?context
    }
 }
@@ -161,7 +162,7 @@ Evaluation & Examples: [CQs and SPARQL queries](https://github.com/TEC-Toolkit/P
 
 Aims to provide a generic model for describing the values of Emission Conversion Factors and their associated metadata.
 
-![ECFO](assets/ECFO.svg)
+![ECFO](assets/ECFO.svg){: width="100%"}
 
 ### The Provenance of Emission Calculations Ontology (PECO)
 
@@ -173,7 +174,7 @@ Evaluation & Examples: [CQs and SPARQL queries](https://github.com/TEC-Toolkit/P
 
 Defines a vocabulary for describing provenance traces of carbon emissions calculations by capturing the quantifiable measurements of energy estimates (i.e., activity data and emission conversion factors used to estimate the carbon emissions).
 
-![PECO](assets/PECO.svg)
+![PECO](assets/PECO.svg){: width="100%"}
 
 ## Emissions Conversion Factors KG
 
