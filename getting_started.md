@@ -164,16 +164,11 @@ Aims to provide a generic model for describing the values of Emission Conversion
 
 
 <figure>
-    
 ![ECFO](assets/ECFO.svg){: width="90%"}
-    
 <figcaption>
-
 The main entities of ECFO ontology.
 Legend: solid ellipse → class in our ontologies, dashed ellipse → class in external ontologies, dashed rectangle → RDFS `Datatype`, arrow → property.
-    
 </figcaption>
-
 </figure>
 
 ### The Provenance of Emission Calculations Ontology (PECO)
@@ -187,16 +182,11 @@ Evaluation & Examples: [CQs and SPARQL queries](https://github.com/TEC-Toolkit/P
 Defines a vocabulary for describing provenance traces of carbon emissions calculations by capturing the quantifiable measurements of energy estimates (i.e., activity data and emission conversion factors used to estimate the carbon emissions).
 
 <figure>
-    
 ![PECO](assets/PECO.svg){: width="90%"}
-    
 <figcaption>
-    
 The main entities of PECO ontology.
 Legend: solid ellipse → class in our ontologies, dashed ellipse → class in external ontologies, dashed rectangle → RDFS `Datatype`, solid arrow → property, dashed arrow → RDFS `subClassOf`.
-    
 </figcaption>
-
 </figure>
 
 ## Emissions Conversion Factors KG
