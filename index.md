@@ -22,13 +22,18 @@ The TEC toolkit consists ontologies for modelling ECFs in KGs and describing pro
 
 ## Cite as
 
-> Milan Markovic, Daniel Garijo, Stefano Germano and Iman Naja. Transparent Emission Calculations (TEC) Toolkit. 2023. URL: [https://w3id.org/tec-toolkit/](https://w3id.org/tec-toolkit/)
+> Markovic, M., Garijo, D., Germano, S., Naja, I. (2023). TEC: Transparent Emissions Calculation Toolkit. In: Payne, T.R., et al. The Semantic Web – ISWC 2023. ISWC 2023. Lecture Notes in Computer Science, vol 14266. Springer, Cham. https://doi.org/10.1007/978-3-031-47243-5_5
 
 ## License
 
 The license for the TEC toolkit ontologies is [CC-BY 4.0](http://creativecommons.org/licenses/by/4.0).
 For the software components, the [Semantic Machine Lerning Impact Calculator](https://github.com/TEC-Toolkit/Semantic_Machine_Learning_Impact_Calculator) and the [data validation module](https://github.com/TEC-Toolkit/Data-Validation) are under the MIT License (MIT).
 The [mappings and KG](https://github.com/EATS-UoA/cfkg) are under an Apache 2.0 license.
+
+# Presentations
+
+- Slides from the the 22nd International Semantci Web Conference 2023 [slides](https://github.com/TEC-Toolkit/tec-toolkit.github.io/files/13377520/ISWC.2023.pdf)
+
 
 # Resources
 The TEC Toolkit includes the resources listed below. Every resource has its own GitHub repository, available in the [TEC-Toolkit organization](https://github.com/TEC-Toolkit):
