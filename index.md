@@ -32,7 +32,7 @@ The [mappings and KG](https://github.com/EATS-UoA/cfkg) are under an Apache 2.0 
 
 # Presentations
 
-- Slides from the the 22nd International Semantci Web Conference 2023 [slides](https://github.com/TEC-Toolkit/tec-toolkit.github.io/files/13377520/ISWC.2023.pdf)
+- Slides from the the 22nd International Semantic Web Conference 2023 [slides](https://github.com/TEC-Toolkit/tec-toolkit.github.io/files/13377520/ISWC.2023.pdf)
 
 
 # Resources
