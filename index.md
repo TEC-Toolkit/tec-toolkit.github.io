@@ -48,7 +48,8 @@ The Emission Conversion Factor Knowledge Graph (based on ECFO) contains over 40.
 - [SPARQL query examples](https://github.com/TEC-Toolkit/cfkg#sparql-endpoint) to learn more on doing queries.
 
 ## Software
-- The [Semantic Machine Lerning Impact Calculator](https://calculator.linkeddata.es) (please open it in Chrome) is an extension of the [Machine learning Impact (MLI) calculator](https://mlco2.github.io/impact\#compute) with semantic components to perform the emission calculations.
+- The [Farm Explorer](https://eats.org.uk/ISWC-2024-Demo/) demo uses semantic descriptions of emission calculation formulas by leveraging knowledge graphs containing static and dynamic information about the farm operation and emission conversion factors
+- The [Semantic Machine Lerning Impact Calculator](https://calculator.linkeddata.es) is an extension of the [Machine learning Impact (MLI) calculator](https://mlco2.github.io/impact\#compute) with semantic components to perform the emission calculations.
 - The [Data Validation component](https://github.com/TEC-Toolkit/Data-Validation) runs Datalog rules to detect violations of conditions according to ECFO.
 
 # Getting started
